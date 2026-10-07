@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" rx="40" fill="#eef3f6"/>
+  <path d="M0 520 300 350l230 120 210-190 460 260v160H0Z" fill="#dfe8ef"/>
+  <circle cx="940" cy="180" r="90" fill="#c49a5a" opacity=".28"/>
+  <text x="70" y="110" font-family="Arial" font-size="44" font-weight="700" fill="#0d2743">PROJECT SCREENSHOT</text>
+  <text x="70" y="165" font-family="Arial" font-size="24" fill="#52606d">Replace this SVG in public/assets/projects/</text>
+</svg>

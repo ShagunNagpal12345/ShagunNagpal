@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d2743" />
+    <meta name="description" content="Shagun Nagpal — Business Intelligence & Analytics Leader building scalable analytics, AI-enabled intelligence and digital products." />
+    <meta name="keywords" content="Business Intelligence, Data Analytics, BI Strategy, Analytics Leader, Data Strategy, Power BI, Generative AI, Analytics Transformation" />
+    <meta property="og:title" content="Shagun Nagpal | Business Intelligence & Analytics Leader" />
+    <meta property="og:description" content="From Data to Decisions to Impact." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Shagun Nagpal | BI & Analytics Leader</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem('theme')
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const useDarkTheme = savedTheme ? savedTheme === 'dark' : prefersDark
+
+        document.documentElement.classList.toggle('dark', useDarkTheme)
+        document.documentElement.style.colorScheme = useDarkTheme ? 'dark' : 'light'
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
