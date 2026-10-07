@@ -10,14 +10,15 @@ import Recognition from './components/Recognition'
 import Footer from './components/Footer'
 import MotionController from './components/MotionController'
 import ExecutiveDashboard from './components/ExecutiveDashboard'
+import SeoMetadata from './components/SeoMetadata'
 import { BrowserRouter } from 'react-router-dom'
 
 export default function App(){
   const route = window.location.pathname.replace(/\/+$/, '')
 
   if (route === '/dashboard' || route.startsWith('/dashboard/')) {
-    return <BrowserRouter><ExecutiveDashboard /></BrowserRouter>
+    return <><SeoMetadata/><BrowserRouter><ExecutiveDashboard /></BrowserRouter></>
   }
 
-  return <><MotionController/><Navbar/><main><Hero/><About/><SkillsScroller/><Experience/><ImpactScroller/><Projects/><Skills/><Recognition/></main><Footer/></>
+  return <><SeoMetadata/><MotionController/><Navbar/><main><Hero/><About/><SkillsScroller/><Experience/><ImpactScroller/><Projects/><Skills/><Recognition/></main><Footer/></>
 }
