@@ -1,0 +1,16 @@
+{
+  "name": "Shagun Nagpal - Business Intelligence & Analytics Portfolio",
+  "short_name": "Shagun Nagpal",
+  "description": "Executive Business Intelligence resume and analytics portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f3",
+  "theme_color": "#0d2743",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

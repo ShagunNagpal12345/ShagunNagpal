@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1e6d4"/><stop offset="1" stop-color="#dfe8ef"/></linearGradient></defs>
+  <rect width="800" height="900" rx="64" fill="url(#g)"/>
+  <circle cx="400" cy="320" r="130" fill="#0d2743" opacity=".12"/>
+  <path d="M170 790c25-175 115-260 230-260s205 85 230 260" fill="#0d2743" opacity=".12"/>
+  <text x="400" y="845" text-anchor="middle" font-family="Arial" font-size="28" fill="#0d2743" opacity=".55">ADD PROFESSIONAL PHOTO</text>
+</svg>
