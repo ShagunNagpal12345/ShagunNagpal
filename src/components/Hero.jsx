@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import {
   ArrowRight,
-  Download,
   Github,
   Linkedin,
   Mail,
@@ -14,8 +13,8 @@ import {
 } from 'lucide-react'
 
 import heroImage from '../assets/profile/hero.png'
-import resumePdf from '../assets/resume/Shagun Nagpal 15+ Executive.pdf'
 import { profile } from '../data/siteData'
+import ResumeDownloadConsent from './ResumeDownloadConsent'
 
 const heroMetrics = [
   {
@@ -254,10 +253,8 @@ export default function Hero() {
                 <ArrowRight size={18} />
               </a>
 
-              <a
-                href={resumePdf}
-                download="Shagun Nagpal Resume.pdf"
-                className="
+              <ResumeDownloadConsent
+                buttonClassName="
                   inline-flex h-[56px]
                   items-center justify-center
                   gap-3
@@ -273,10 +270,7 @@ export default function Hero() {
                   hover:-translate-y-0.5
                   hover:bg-white
                 "
-              >
-                Download Resume
-                <Download size={18} />
-              </a>
+              />
             </motion.div>
 
             {/* SOCIAL LINKS */}

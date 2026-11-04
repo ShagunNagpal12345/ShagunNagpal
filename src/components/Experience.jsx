@@ -237,14 +237,14 @@ export default function Experience() {
                     <img
                       src={item.logo}
                       alt={`${item.company} logo`}
-                      className={`
-                        h-[72px]
-                        w-[180px]
+                      className="
+                        h-auto
+                        w-auto
+                        max-h-[58px]
+                        max-w-[150px]
+                        object-contain
                         object-center
-                        ${item.company === 'Marvel Infotech' || item.company === 'Tarleton'
-                          ? 'scale-[1.18] object-contain'
-                          : 'object-cover'}
-                      `}
+                      "
                     />
                   ) : (
                     <div
@@ -469,10 +469,6 @@ export default function Experience() {
                       companyLogoMap[e.company] ||
                       companyLogoMap[e.employer] ||
                       null
-                    const usesEmblemFit =
-                      e.company === 'Marvel Infotech' ||
-                      e.company === 'Tarleton' ||
-                      e.company === 'Tarleton State University'
 
                     return (
                       <motion.article
@@ -594,16 +590,17 @@ export default function Experience() {
                                 <img
                                   src={companyLogo}
                                   alt={`${e.company} logo`}
-                                  className={`
-                                    h-full
-                                    w-full
+                                  className="
+                                    h-auto
+                                    w-auto
+                                    max-h-[64px]
+                                    max-w-[82%]
+                                    object-contain
                                     object-center
                                     transition-transform
                                     duration-300
-                                    ${usesEmblemFit
-                                      ? 'scale-[1.5] object-contain group-hover:scale-[1.54]'
-                                      : 'object-cover group-hover:scale-[1.025]'}
-                                  `}
+                                    group-hover:scale-[1.025]
+                                  "
                                 />
                               ) : (
                                 <span

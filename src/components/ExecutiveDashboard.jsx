@@ -34,9 +34,11 @@ import {
 
 import profileImage from '../assets/profile/profileimage.png'
 import resumePdf from '../assets/resume/Shagun Nagpal 15+ Executive.pdf'
+import ResumeDownloadConsent from './ResumeDownloadConsent'
 
 import googleLogo from '../assets/Career/Google.png'
 import conduentLogo from '../assets/Career/Conduent.png'
+import nttLogo from '../assets/Career/NTT.png'
 import ericssonLogo from '../assets/Career/Ericsson.png'
 import amexLogo from '../assets/Career/AMEX.png'
 import marvelLogo from '../assets/Career/Marvel.png'
@@ -100,6 +102,10 @@ function getCareerLogo(company = '') {
 
   if (value.includes('conduent')) {
     return conduentLogo
+  }
+
+  if (value.includes('ntt')) {
+    return nttLogo
   }
 
   if (value.includes('ericsson')) {
@@ -2418,10 +2424,9 @@ function Sidebar() {
           />
         </a>
 
-        <a
-          href={resumePdf}
-          download="Shagun Nagpal Resume.pdf"
-          className="
+        <ResumeDownloadConsent
+          iconSize={14}
+          buttonClassName="
             mt-2
             flex
             w-full
@@ -2437,13 +2442,7 @@ function Sidebar() {
             text-white
             hover:bg-[#d09a4a]
           "
-        >
-          <Download
-            size={14}
-          />
-
-          Download Resume
-        </a>
+        />
 
         <a
           href="/"
@@ -2545,10 +2544,10 @@ function MobileHeader() {
             View Resume
           </a>
 
-          <a
-            href={resumePdf}
-            download="Shagun Nagpal Resume.pdf"
-            className="
+          <ResumeDownloadConsent
+            label="Download"
+            iconSize={14}
+            buttonClassName="
               inline-flex
               min-h-11
               items-center
@@ -2561,13 +2560,7 @@ function MobileHeader() {
               font-bold
               text-white
             "
-          >
-            <Download
-              size={14}
-            />
-
-            Download
-          </a>
+          />
         </div>
 
         <nav
